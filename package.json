@@ -1,0 +1,27 @@
+{
+  "name": "webhooks-app",
+  "version": "1.0.0",
+  "description": "Small server application for storing and calling webhooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielcirstea/webhooks-app.git"
+  },
+  "keywords": [],
+  "author": "Daniel Cirstea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielcirstea/webhooks-app/issues"
+  },
+  "homepage": "https://github.com/danielcirstea/webhooks-app#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-jsonschema": "^1.1.6",
+    "helmet": "^4.6.0"
+  }
+}
