@@ -7,8 +7,8 @@ class MemoryStore {
     return this.webhookStorage;
   }
 
-  set(url, token) {
-    this.webhookStorage.push({ url, token });
+  set(data) {
+    this.webhookStorage.push(data);
   }
 
 }

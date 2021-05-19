@@ -7,7 +7,7 @@ const addWebhook = (req, res) => {
   try {
     const { url, token } = req.body;
 
-    webhookStorage.set(url, token);
+    webhookStorage.set({url, token});
     return res.status(200).json({ message: 'Webhook successfully registered.'});
   } catch(error) {
     console.log('[API-WEBHOOKS] Failed to register new webhook', error);
