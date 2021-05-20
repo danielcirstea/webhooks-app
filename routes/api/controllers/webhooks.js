@@ -27,7 +27,7 @@ const addWebhook = (req, res) => {
  * @param {object} res - request object
  * @returns all webhook call results
  */
-const callWebhooks = async (req, res) => {
+const callWebhooks = (req, res) => {
   try {
     const { payload } = req.body;
     const webhooks = webhookStorage.get();
