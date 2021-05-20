@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const config = require('./config')();
 const api = require('./routes/api');
-const packageJson = require('./package.json');
+const packageJson = require('../package.json');
 
 app.use(helmet());
 app.use(bodyParser.urlencoded({ extended: false }));
