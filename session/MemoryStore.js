@@ -10,7 +10,6 @@ class MemoryStore {
   set(data) {
     this.webhookStorage.push(data);
   }
-
 }
 
 module.exports = MemoryStore;

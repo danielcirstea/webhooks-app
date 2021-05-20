@@ -1,8 +1,9 @@
 const express = require('express');
-const api = express.Router();
+const router = express.Router();
 
 const controllers = require('./controllers');
 
-api.post('/webhooks', controllers.webhooks.addWebhook);
+router.post('/webhooks', controllers.webhooks.addWebhook);
+router.post('/webhooks/test', controllers.webhooks.callWebhooks);
 
-module.exports = api;
+module.exports = router;
