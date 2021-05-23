@@ -1,5 +1,3 @@
 const MemoryStore = require('./MemoryStore');
 
-module.exports = {
-  MemoryStore
-};
+module.exports = new MemoryStore();
