@@ -1,4 +1,3 @@
-const axios = require('axios');
 const { addWebhooks, callWebhooks } = require('../webhooks');
 const webhookStorage = require('../../../../session');
 
@@ -24,21 +23,21 @@ const mockRequest = () => {
 };
 
 const mockResponse = () => ({
-    status: jest.fn().mockImplementation(function(status) {
+    status: jest.fn().mockImplementation(function (status) {
         this.status = status;
         return this;
     }),
-    json: jest.fn().mockImplementation(function(json) {
+    json: jest.fn().mockImplementation(function (json) {
         this.json = json;
         return this;
     })
 });
 
 describe('Webhooks Controller', () => {
-    
+
     beforeEach(() => {
         jest.clearAllMocks();
-        jest.spyOn(console, 'log').mockImplementation(() => {});
+        jest.spyOn(console, 'log').mockImplementation(() => { });
 
         webhookStorage.storage = [];
     });
